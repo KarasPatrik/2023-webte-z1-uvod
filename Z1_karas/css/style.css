@@ -1,0 +1,398 @@
+@font-face {
+    font-family: Audiowide ;
+    src: url(../Audiowide/Audiowide-Regular.ttf);
+}
+body {
+    font-family: Audiowide ;
+    margin: 0 auto;
+}
+.heading {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 35px;
+    color: black;
+}
+.navMenu {
+    background-color: black;
+    list-style: none;
+    padding: 0;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navMenu ul {
+    display: flex;
+    font-size: large;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+.navMenu ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 5rem;
+
+}
+
+.navMenu ul li a{
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+}
+.navMenu ul li:hover{
+    background-color: white;
+}
+.navMenu ul li:hover a{
+    color: black;
+}
+
+@media screen and (max-width: 480px) {
+    .navMenu  ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    .navMenu ul li{
+        min-height: 0;
+        width: 100%;
+    }
+    .navMenu ul li a{
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+.subtitle{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.Me{
+    margin-right: 12%;
+    margin-left: 12%;
+}
+.Me img{
+    float: left;
+    border-radius: 2rem;
+    width: 30rem;
+    max-width: 100%;
+    height: auto;
+    margin-right: 2rem;
+    margin-top: 10px;
+    margin-bottom: 1rem;
+}
+.Me p{
+    text-align: justify;
+}
+.Me aside{
+    text-align: center;
+    float: right;
+    border-radius: 1.3rem;
+    background-color: black;
+    color: white;
+    padding: 2rem;
+    margin-left: 1rem;
+    width: 14rem;
+}
+.Me div{
+    float: left;
+    background-color: black;
+    border-radius: 1.3rem;
+    color: white;
+    padding: 1rem;
+    margin-right: 1rem;
+    width: 16rem;
+}
+.Me div h3{
+    text-align: center;
+}
+.Me div ul{
+    text-align: left;
+}
+@media screen and (max-width: 600px) {
+    .Me aside {
+        width: auto;
+        float: unset;
+    }
+    .Me div{
+        float: unset;
+        width: auto;
+    }
+}
+
+.picture {
+    position: relative;
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-bottom: 10%;
+}
+.picture img{
+    position: relative;
+    border-radius: 3rem;
+    width: 100%;
+
+}
+.icon {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    border: 2px solid white;
+    background: black;
+}
+
+.tooltip{
+    position: absolute;
+    padding: 15px;
+    width: 5rem;
+    height:3rem;
+    background-color: white;
+    color: black;
+    border-radius: 40%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: center;
+}
+.tooltip h3{
+    margin: 0;
+    padding: 0;
+}
+.tooltip p {
+    margin: 0;
+    padding: 0;
+}
+.item:hover .tooltip{
+    display: block;
+}
+.one{
+    position: absolute;
+    top: 35%;
+    left: 30%;
+}
+.one .tooltip{
+    left: -300%;
+    top: 150%;
+}
+.two{
+    position: absolute;
+    top: 35%;
+    left: 65%;
+}
+.three{
+    position: absolute;
+    top: 60%;
+    left: 58%;
+}
+.three .tooltip{
+    left: -300%;
+    top: 150%;
+}
+.four{
+    position: absolute;
+    top: 35%;
+    left: 85%;
+}
+.four .tooltip{
+    left: -620%;
+    top: -150%;
+}
+.five {
+    position: absolute;
+    top: 15%;
+    left: 20%;
+}
+.five .tooltip{
+    left: 150%;
+    top: -150%;
+}
+
+@media screen and (max-width: 500px) {
+    .tooltip {
+        padding: 15px;
+        width: 4rem;
+        height: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .picture {
+        margin-right: 8%;
+        margin-left: 8%;
+    }
+    .icon{
+        width:10px;
+        height: 10px;
+    }
+}
+.lecture{
+    display: flex;
+    flex-direction: column;
+    background-color: #a0d7a2;
+    border-radius: 2.5rem;
+    padding: 10px 20px;
+    margin: 5px;
+    min-width: 5rem;
+    min-height: 6.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.practise{
+    display: flex;
+    flex-direction: column;
+    background-color: #BDD4E7;
+    border-radius: 2.5rem;
+    padding: 10px 20px;
+    margin: 5px;
+    min-width: 5rem;
+    height: 6.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.two_hour{
+    max-width: 100%;
+}
+.one_hour{
+    max-width: 6rem;
+}
+.table_div{
+    overflow: auto;
+}
+.timetable{
+    border: 0;
+    border-spacing: 0;
+    margin-bottom: 7rem;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.info{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.empty{
+    height: 3rem;
+}
+.border_line_first{
+    background-color: darkgrey;
+    height: 5rem;
+}
+.border_line_last{
+    background-color: darkgrey;
+    height: 2rem;
+}
+.left{
+    border-bottom-left-radius: 2rem;
+    border-top-left-radius: 2rem;
+}
+.right{
+    border-bottom-right-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+td, th {
+    padding: 0;
+    text-align: center;
+}
+tr:nth-of-type(odd) {
+    background-color: #EFEFEF;
+}
+.cv{
+    box-sizing: border-box;
+    display: flex;
+    margin: 50px auto;
+    margin-top: 0;
+    max-width: 800px;
+
+}
+.cv h3{
+    padding: 5px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+.cv img{
+    display: block;
+    width: 200px;
+    height: auto;
+    border-radius: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:20px;
+}
+.cv li{
+    list-style: none;
+    text-decoration: none;
+}
+.box_1{
+    background-color: #b7b7b7;
+    width: 40%;
+    border-top-left-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+}
+.box_2{
+    background-color: #e5e5e5;
+    width: 60%;
+    padding-bottom: 20px;
+    border-top-right-radius:3rem;
+    border-bottom-right-radius: 3rem;
+}
+.skill_div{
+    box-sizing: border-box;
+    display: flex;
+}
+.points{
+padding-left: 20px;
+}
+.full_point{
+    background-color: #67ee67;
+    border: 2px solid black;
+    height: 0.7rem;
+    width: 0.7rem;
+    border-radius: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-right: 6px;
+}
+.empty_point{
+    background-color: #ef4c4c;
+    border: 2px solid black;
+    height: 0.7rem;
+    width: 0.7rem;
+    border-radius: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-right: 6px;
+}
+.year_info{
+    font-size: 10px;
+    font-weight: lighter;
+}
+@media screen and (max-width: 900px) {
+    .cv{
+        width: 90%;
+        max-width: 600px;
+        margin: 2rem auto;
+        flex-direction: column;
+    }
+    .box_1{
+        width: 100%;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 3rem;
+        border-top-right-radius: 3rem;
+    }
+    .box_2{
+        width: 100%;
+        border-bottom-right-radius: 3rem;
+        border-bottom-left-radius: 3rem;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+}
